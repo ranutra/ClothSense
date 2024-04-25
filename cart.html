@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/clothes.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">Cloth<span>Sense</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="cart.html" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="login.html" id="login"><i data-feather="user"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Banner section start -->
+    <section class="cart-banner" id="cart-banner">
+      <main class="content">
+        <h1>Cart</h1>
+      </main>
+    </section>
+    <!-- Banner section end -->
+
+    <!-- Cart Section start -->
+    <section class="cart" id="cart">
+      <table>
+        <thead>
+          <td></td>
+          <td></td>
+          <td>Price</td>
+          <td>Quantity</td>
+          <td>Subtotal</td>
+          <td></td>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="selection.html"
+                ><img src="img/products/1.jpg" alt=""
+              /></a>
+            </td>
+            <td>
+              Shirt 1
+              <p>Size: M</p>
+            </td>
+            <td>Rp75.000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Rp75.000</td>
+            <td>
+              <a href="#"><i data-feather="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="selection.html"
+                ><img src="img/products/1.jpg" alt=""
+              /></a>
+            </td>
+            <td>
+              Shirt 2
+              <p>Size: XL</p>
+            </td>
+            <td>Rp75.000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Rp75.000</td>
+            <td>
+              <a href="#"><i data-feather="trash"></i></a>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="selection.html"
+                ><img src="img/products/1.jpg" alt=""
+              /></a>
+            </td>
+            <td>
+              Shirt 3
+              <p>Size: S</p>
+            </td>
+            <td>Rp75.000</td>
+            <td><input type="number" value="1" /></td>
+            <td>Rp75.000</td>
+            <td>
+              <a href="men.html"><i data-feather="trash"></i></a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- Cart Section end -->
+
+    <section class="summary">
+      <h3>Summary</h3>
+      <div class="box">
+        <div class="content">
+          <div class="coupon">
+            <h4>Coupon</h4>
+            <input type="text" placeholder="Enter your coupon" />
+          </div>
+          <div class="price">
+            <h4>Total: <span>Rp225.000</span></h4>
+          </div>
+          <button class="normal">Checkout</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://twitter.com/"><i data-feather="twitter"></i></a>
+        <a href="https://www.facebook.com/"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <span>group9</span>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+    <script src="js/clothes.js"></script>
+  </body>
+</html>

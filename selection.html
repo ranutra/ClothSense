@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clothes</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="css/clothes.css" />
+  </head>
+
+  <body>
+    <!-- Navbar start -->
+    <nav class="navbar">
+      <a href="index.html" class="navbar-logo">Cloth<span>Sense</span>.</a>
+
+      <div class="navbar-nav">
+        <a href="men.html">Men</a>
+        <a href="women.html">Women</a>
+        <a href="kids.html">Kids</a>
+      </div>
+
+      <div class="navbar-extra">
+        <a href="cart.html" id="shopping-cart-button"
+          ><i data-feather="shopping-cart"></i
+        ></a>
+        <a href="login.html" id="login"><i data-feather="user"></i></a>
+        <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+    <!-- Navbar end -->
+
+    <!-- Selection Section start -->
+    <section class="selection" id="selection">
+      <div class="images">
+        <img src="img/products/1.jpg" alt="" width="100%" id="mainImg" />
+        <div class="other-img">
+          <div class="sub-img">
+            <img src="img/products/men/1.jpg" width="100%" class="small-img" />
+          </div>
+          <div class="sub-img">
+            <img src="img/products/men/2.jpg" width="100%" class="small-img" />
+          </div>
+          <div class="sub-img">
+            <img src="img/products/men/3.jpg" width="100%" class="small-img" />
+          </div>
+          <div class="sub-img">
+            <img src="img/products/men/4.jpg" width="100%" class="small-img" />
+          </div>
+        </div>
+      </div>
+      <div class="details">
+        <h4>Clothes 1</h4>
+        <h2>Rp250.000</h2>
+        <select>
+          <option value="">Select Size</option>
+          <option value="">S</option>
+          <option value="">M</option>
+          <option value="">L</option>
+          <option value="">XL</option>
+        </select>
+        <input type="number" value="1" />
+        <a href="#" onclick="showNotification()">Add To cart</a>
+        <br />
+        <p>
+          Relaxed-fit shirt in woven viscose fabric with a printed pattern.
+          Resort collar, buttons without placket, and long sleeves. Straight-cut
+          hem.
+        </p>
+      </div>
+    </section>
+    <!-- Selection Section end -->
+
+    <!-- Cart Notification start-->
+    <div class="notification" id="notification">
+      <span class="message">Your item has been added to the cart.</span>
+    </div>
+    <!-- Cart Notification end-->
+
+    <!-- Footer start -->
+    <footer>
+      <div class="socials">
+        <a href="https://www.instagram.com/"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://twitter.com/"><i data-feather="twitter"></i></a>
+        <a href="https://www.facebook.com/"><i data-feather="facebook"></i></a>
+      </div>
+
+      <div class="credit">
+        <p>Created by <span>group9</span>. | &copy; 2023.</p>
+      </div>
+    </footer>
+    <!-- Footer end -->
+
+    <!-- Feather Icons -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- My JavaScript -->
+    <script src="js/clothes.js"></script>
+  </body>
+</html>
